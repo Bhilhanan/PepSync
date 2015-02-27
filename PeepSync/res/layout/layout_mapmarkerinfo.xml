@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    
+    android:id="@+id/layout_markerinfo_relative"
+    android:layout_gravity="center_vertical" >
+    <!--android:background="@android:drawable/dialog_frame" -->
+    <ImageView 
+        android:id="@+id/layout_markerInfo_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="display picture"
+        android:src="@drawable/ic_action_user" />
+    <TextView 
+        android:id="@+id/layout_markerInfo_title"
+        android:layout_toRightOf="@id/layout_markerInfo_img"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Title"
+        android:textSize="21sp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_bright" />
+
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_markerInfo_img"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp" >    
+    <TextView
+        android:id="@+id/layout_markerInfo_descp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+    </ScrollView>
+
+</RelativeLayout>

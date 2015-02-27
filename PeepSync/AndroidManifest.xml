@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.maadlabs.peepsync"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <permission
+        android:name="com.maadlabs.peepsync.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.maadlabs.peepsync.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<instrumentation android:name="android.test.InstrumentationTestRunner" android:targetPackage="com.maadlabs.peepsync"></instrumentation>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+         <uses-library android:name="android.test.runner" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBemiLMYrdR2rp0pdpZ77LDr16W0fnVHQ0" />
+
+        <receiver android:name="com.maadlabs.peepsync.ChatBroadcast" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.maadlabs.peepsync.ChatService" >
+        </service>
+
+        <activity
+            android:name="com.maadlabs.peepsync.MainActivity"
+          
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.maadlabs.peepsync.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maadlabs.peepsync.ConnectionsActivity"
+            android:label="@string/title_activity_connections"
+            android:parentActivityName="com.maadlabs.peepsync.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.maadlabs.peepsync.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:parentActivityName="com.maadlabs.peepsync.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.maadlabs.peepsync.MapActivity"
+            android:label="@string/title_activity_map"
+            android:parentActivityName="com.maadlabs.peepsync.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="FacebookLogin" >
+        </activity>
+        <activity
+            android:name="com.maadlabs.peepsync.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.maadlabs.peepsync.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.maadlabs.peepsync.LogoutActivity"
+            android:label="@string/title_activity_logout"
+            android:parentActivityName="com.maadlabs.peepsync.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.maadlabs.peepsync.RecentActivity"
+            android:label="@string/title_activity_recent"
+            android:parentActivityName="com.maadlabs.peepsync.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.maadlabs.peepsync.HTTPConnect"
+            android:label="@string/title_activity_httpconnect"
+            android:parentActivityName="com.maadlabs.peepsync.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.maadlabs.peepsync.PersonInfoActivity"
+            android:label="@string/title_activity_person_info"
+            android:parentActivityName="com.maadlabs.peepsync.ConnectionsActivity" >
+        </activity>
+        <activity
+            android:name="com.maadlabs.peepsync.SetupActivity"
+            android:label="@string/title_activity_setup" >
+        </activity>
+        <activity
+            android:name="com.maadlabs.peepsync.GroupPickerActivity"
+            android:label="@string/title_activity_group_picker" >
+        </activity>
+        <activity
+            android:name="com.maadlabs.peepsync.GroupInfoActivity"
+            android:label="@string/title_activity_group_info" >
+        </activity>
+        <activity
+            android:name="com.maadlabs.peepsync.ChatActivity"
+            android:label="@string/title_activity_chat" >
+        </activity>
+        <activity
+            android:name="com.maadlabs.peepsync.MapListViewActivity"
+            android:label="Scanner" >
+        </activity>
+        <activity
+            android:name="com.maadlabs.peepsync.MapMarkerInfo"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.maadlabs.peepsync.NotificationsActivity"
+            android:label="@string/title_activity_notifications" >
+        </activity>
+        <activity
+            android:name="com.maadlabs.peepsync.AlertActivity"
+            android:label="@string/title_activity_alert" >
+        </activity>
+    </application>
+
+</manifest>

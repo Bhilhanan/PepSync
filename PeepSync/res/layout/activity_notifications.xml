@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView
+        android:id="@+id/activity_notifications_display_picture"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="image"
+        />
+        
+    <Button 
+        android:text="Sync"
+        android:id="@+id/activity_notifications_accept_button"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/activity_notifications_display_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <Button 
+        android:text="Ignore"
+        android:id="@+id/activity_notifications_ignore_button"
+        android:layout_below="@id/activity_notifications_display_picture"
+        android:layout_toRightOf="@id/activity_notifications_accept_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    </RelativeLayout>
+

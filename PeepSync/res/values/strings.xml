@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PeepSync</string>
+    <string name="app_id">851491364877407</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hint_username">(User Name)</string>
+    <string name="hint_password">(Password)</string>
+    <string name="login">Login</string>
+    <string name="new_user">New User</string>
+    <string name="login_image">Login</string>
+    <string name="title_activity_dash_board">DashBoardActivity</string>
+    <string name="title_activity_custom_list_adapter">CustomListAdapter</string>
+    <string name="title_activity_recent">RecentActivity</string>
+    <string name="title_activity_connections">ConnectionsActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_logout">LogoutActivity</string>
+    <string name="title_activity_httpconnect">HTTPConnect</string>
+    <string name="title_activity_person_info">PersonInfoActivity</string>
+    <string name="title_activity_login">LoginFragment</string>
+    <string name="title_activity_setup">Setup</string>
+    <string name="title_activity_group_picker">GroupPickerActivity</string>
+    <string name="title_activity_group_info">GroupInfoActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_notifications">NotificationsActivity</string>
+    <string name="title_activity_alert">AlertActivity</string>
+
+</resources>

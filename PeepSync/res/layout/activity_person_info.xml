@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maadlabs.peepsync.PersonInfoActivity" >
+  
+    <TextView 
+        android:id="@+id/person_info_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_margin="2sp"/>
+    
+    <TextView 
+        android:id="@+id/person_info_about"
+        android:layout_below="@id/person_info_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2sp"/>
+    
+    <TextView 
+        android:id="@+id/person_info_interest"
+        android:layout_below="@id/person_info_about"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2sp"/>
+    
+    <Button 
+        android:gravity="center"
+        android:id="@+id/person_info_chat_button"
+        android:text="Chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/person_info_interest"
+        android:layout_marginTop="3sp"/>
+    
+    <Button 
+        android:gravity="center"
+        android:id="@+id/person_info_sync_button"
+        android:text="Sync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/person_info_chat_button"
+        android:layout_below="@id/person_info_interest"
+        android:layout_marginTop="3sp"/>
+    
+    </RelativeLayout>

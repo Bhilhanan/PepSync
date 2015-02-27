@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/connections_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+     <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+	<ListView
+        android:id="@+id/connections_activity_peopleList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		>
+    </ListView>
+
+    </RelativeLayout>
+    
+	<fragment
+	    android:id="@+id/dashBoard"
+	    android:layout_width="200sp"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="right"
+	    android:background="@drawable/transparent_background"
+	    class="com.maadlabs.peepsync.DashBoardFragment"/>
+
+</FrameLayout>
+    
+

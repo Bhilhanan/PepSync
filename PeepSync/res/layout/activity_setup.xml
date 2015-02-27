@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maadlabs.peepsync.SetupActivity" >
+    
+    <ImageView 
+        android:contentDescription="image"
+        android:id="@+id/activity_setup_display_picture"
+        android:layout_margin="2sp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+       />
+    
+    <TextView 
+        android:id="@+id/activity_setup_display_name"
+        android:layout_below="@id/activity_setup_display_picture"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2sp"/>
+    
+   	<AutoCompleteTextView 
+   	    android:id="@+id/activity_setup_interests_list"
+   	    android:layout_below="@id/activity_setup_display_name"
+   	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+   	    android:layout_marginBottom="20dp"
+   	    />
+ 	
+   	<Button 
+   	    android:id="@+id/activity_setup_complete"
+   	    android:layout_below="@id/activity_setup_interests_list"
+   	    android:text="Complete"
+   	    android:background="#000"
+   	    android:textColor="#FF0"
+   	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+   	
+</RelativeLayout>
+
